@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .btn {
+                border: 2px solid black;
+                background-color: white;
+                color: black;
+                padding: 14px 28px;
+                font-size: 50px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button class="btn" onclick="callAndroid()">HTML Button</button>
+        </div>
+
+        <script>
+            function callAndroid() {
+<!--                'Android' 為事先定義好的Interface Name-->
+                Android.call('from JavaScript')
+            }
+        </script>
+    </body>
+</html>
